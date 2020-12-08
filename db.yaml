@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  DB_DRIVER: org.postgresql.Driver
+  DB_PASSWORD: camunda
+  DB_URL: jdbc:postgresql://camundadb:5432/process-engine
+  DB_USERNAME: camunda
+  WAIT_FOR: camundadb:5432
+kind: ConfigMap
+metadata:
+  name: dbconfig
+  namespace: camunda
